@@ -3,3 +3,5 @@ version: '3'
 services:
   rlang:
     build: .
+    volumes:
+      - ./${FOLDER}:/app
