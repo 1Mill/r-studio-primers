@@ -3,5 +3,10 @@ version: '3'
 services:
   r:
     build: .
+    environment:
+      PASSWORD: ${PASSWORD}
+      USER: ${USER}
+    ports:
+      - 8787:8787
     volumes:
-      - ./${FOLDER}:/app
+      - ./${FOLDER}:/home/rstudio

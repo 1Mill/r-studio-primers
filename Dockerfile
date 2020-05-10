@@ -2,4 +2,7 @@ FROM rocker/tidyverse:4.0.0
 
 WORKDIR /app
 
-CMD [ "Rscript", "script.r" ]
+ENV PASSWORD ${PASSWORD}
+ENV USER ${USER}
+
+# CMD [ "Rscript", "script.r" ]
